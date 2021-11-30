@@ -6,6 +6,7 @@ Use the docker scripts to do things. You shouldn't need to rebuild, but if you l
 1. DONE: read a thing from a file, then display it on the screen
 1. DONE: read multiple things from the same file. display them on the screen one at a time. add a button to tell it when I'm done with each thing
 1. TODO: do "done" better
-1. TODO: hide the response by default. add a button to make it show
+1. DONE: hide the response by default. add a button to make it show
 1. TODO: read the things from multiple files instead of the same file
 1. TODO: randomize card display order
+1. TODO: make it prettier

@@ -35,14 +35,27 @@ class App extends Component {
 }
 
 class Flashcard extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showResponse: false
+    };
+  }
+
   render() {
     return (
       <div className="flashcard">
         <div className="card-category">{this.props.category}</div>
         <div className="card-prompt">{this.props.prompt}</div>
-        <div className="card-response">{this.props.response}</div>
+        <div className={this.state.showResponse ? "card-response" : "hidden"}>{this.props.response}</div>
+        
+        <div className={this.state.showResponse ? "hidden" : ""}><button onClick={this.showResponse}>Show Response</button></div>
       </div>
     );
+  }
+
+  showResponse = () => {
+    this.setState({ showResponse: true });
   }
 }
 
